@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="icon" href="/favicon/favicon.ico" >
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="box" id="heading">
+    <h1> <%= kindOfDay %> </h1>
+    </div>
+    <div class="box">
+      <% for(var i=0; i<task.length; i++){ %>
+        <div class="item">
+         <input type="checkbox">
+          <p><%= task[i] %></p>
+        </div>
+       <% } %> 
+       <form action="/" method="post" class="item">
+        <input type="text" name="task" placeholder="New Task" autocomplete="off">
+        <button type="submit" name="submit">+</button>
+      </form>
+        
+    </div>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+  </body>
+</html>
